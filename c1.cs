@@ -1,5 +1,6 @@
 public class t1
 {
+	
 		public void processResponseOk(GcmAsyncParameters asyncParam)
 		{
 			var result = new GcmMessageTransportResponse()
