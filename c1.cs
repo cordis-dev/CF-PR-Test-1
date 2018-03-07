@@ -11,11 +11,9 @@ public class t1
 			var json = new JObject();
 		    var str = string.Empty;
 			try { str = (new StreamReader(asyncParam.WebResponse.GetResponseStream())).ReadToEnd(); }
-			catch {
-			}
+			catch {	}
 		    try { json = JObject.Parse(str); }
-		    catch { 
-		    }
+		    catch { }
 			result.NumberOfCanonicalIds = json.Value<long>("canonical_ids");
 			result.NumberOfFailures = json.Value<long>("failure");
 			result.NumberOfSuccesses = json.Value<long>("success");
